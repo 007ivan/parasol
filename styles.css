@@ -1,0 +1,258 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    min-width: 320px;
+    height: 100%;
+}
+
+img.bg {
+    min-height: 100%;
+    min-width: 1200px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+
+.header-menu li {
+    display: inline;
+}
+
+.header-menu li + li {
+    margin-left: 28px;
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.sandvich_menu {
+    background-image: url("images/icon_sandich.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 22px;
+    padding-right: 115px;
+}
+
+.left-menu ul a {
+    text-decoration: none;
+    color: #525050;
+    font-size: 13px;
+}
+
+.header-menu .right-menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #525050;
+    font-size: 10px;
+}
+
+.header-menu .right-menu .lang-site li + li,
+.header-menu .right-menu .registration li + li {
+    margin-left: 1px;
+}
+
+.header-menu .right-menu .lang-site a,
+.header-menu .registration a {
+    padding: 6px 8px;
+}
+
+.header-menu .right-menu .lang-site a.active,
+.header-menu .right-menu .lang-site a:hover,
+.header-menu .right-menu .registration a.active,
+.header-menu .right-menu .registration a:hover {
+    color: #ffffff;
+    padding: 6px 8px;
+    background-color: #377cbd;
+    transition: .9s;
+}
+
+.lang-site {
+    padding-left: 3px;
+}
+
+.registration ul {
+    padding-right: 13px;
+    border-right: 1px solid #ababab;
+}
+
+.right-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logostyles {
+    padding-top: 30px;
+}
+
+.content-text {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    flex-direction: column;
+}
+
+span {
+    font-size: 47px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.blue-text {
+    color: #36acff;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    background-color: #07548b;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auto, .property, .life, .trevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.propertylogo, .lifelogo, .trevellogo, .autologo {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 82px;
+}
+
+.autologo {
+    background-image: url("images/icon_auto.png");
+}
+
+.propertylogo {
+    background-image: url("images/icon_property.png");
+}
+
+.lifelogo {
+    background-image: url("images/icon_life.png");
+}
+
+.trevellogo {
+    background-image: url("images/icon_travel.png");
+}
+
+.footer-menu li p {
+    font-size: 15px;
+}
+
+.life-hover, .auto-hover, .property-hover, .trevel-hover {
+    bottom: 0;
+    background-color: #046cb5;;
+    box-shadow: 0 0 5px 2px #07548b;
+    width: 200px;
+    height: 300px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+
+.hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auto:hover > .auto-hover,
+.property:hover > .property-hover,
+.life:hover > .life-hover,
+.trevel:hover > .trevel-hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.life-hover p, .auto-hover p, .property-hover p, .trevel-hover p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.sub-menu-hover {
+    background-color: #ffffff;
+    width: 220px;
+    height: 150px;
+}
+
+.sub-item {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 2;
+    color: #07548b;
+    position: relative;
+    z-index: 1;
+}
+
+.auto-hover > .hover {
+    cursor: auto;
+}
+
+.hover ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hover ul {
+    background-color: #ffffff;
+    width: 220px;
+    height: 100%
+}
+
+.hover li:hover {
+    background-color: gainsboro;
+}
